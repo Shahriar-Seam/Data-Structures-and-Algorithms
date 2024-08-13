@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void selection_sort(vector <int> &v)
+{
+    int i, j;
+
+    for (i = 0; i < v.size(); i++) {
+        for (j = i + 1; j < v.size(); j++) {
+            if (v[j] < v[i]) {
+                swap(v[i], v[j]);
+            }
+        }
+    }
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int n;
+
+    cin >> n;
+
+    vector <int> v(n);
+
+    for (auto &it : v) {
+        cin >> it;
+    }
+
+    selection_sort(v);
+
+    for (auto it : v) {
+        cout << it << " ";
+    }
+
+    return 0;
+}
