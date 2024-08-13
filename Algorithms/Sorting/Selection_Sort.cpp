@@ -1,3 +1,10 @@
+/**
+ *    author:  Anonymous_HF
+ *    created: 14/08/2024
+**/
+
+// O(N) = N^2
+
 #include <bits/stdc++.h>
 
 using namespace std;
