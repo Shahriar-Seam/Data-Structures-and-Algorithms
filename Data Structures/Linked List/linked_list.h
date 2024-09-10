@@ -166,7 +166,6 @@ void reverse(node **head)
     }
 }
 
-// From GeeksForGeeks
 void sort(node **head)
 {
     node *current_node = *head, *left, *right;
